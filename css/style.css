@@ -35,7 +35,6 @@ h3 {
 h4 {
   font-family: 'Montserrat', serif;
   font-size: 0.62em;
-  letter-spacing: 0.1rem;
   color: 000000;
 }
 p {
@@ -43,6 +42,18 @@ p {
   font-size: 14px;
   color: 000000;
 }
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
 a {
   color: #000000;
   text-decoration: none; /* No underlining */
@@ -50,6 +61,7 @@ a {
 a:hover {
   color: #000000;
   font-weight: 500; /* bold when hovering over a link */
+}
 a:active { /* selected link */
   color: #000000;
   font-weight: 700;
