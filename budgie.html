@@ -245,37 +245,31 @@
             <!--font sizes-->
             <div>
               <h4>PRE-DEFINED SIZES</h4>
-              <div class="line">
-                <p>Aa</p>
-              </div>
+              <p class="line">Aa</p>
+              <p>Aa</p>
               <p>26px</p>
             </div>
             <div>
               <!--box for line-->
-              <div class="line">
-                <p>Aa</p>
-              </div>
+              <p class="line">Aa</p>
+              <p>Aa</p>
               <p>22px</p>
             </div>
             <div>
               <!--box for line-->
-              <div class="line">
-                <p>Aa</p>
-              </div>
+              <p class="line">Aa</p>
+              <p>Aa</p>
               <p>20px</p>
             </div>
             <div>
               <!--box for line-->
-              <div class="line">
-                <p>Aa</p>
-              </div>
+              <p class="line">Aa</p>
+              <p>Aa</p>
               <p>16px</p>
             </div>
             <div>
               <!--box for line-->
-              <div class="line">
-                <p>Aa</p>
-              </div>
+              <p class="line">Aa</p>
               <p>12px</p>
             </div>
           </div>
@@ -330,7 +324,6 @@
             <div><img src="img/budgie/hifi/overview.svg" alt=""></div>
             <!--winner circle-->
             <div>
-              <div><span class="dot"></span></div>
               <div>
                 <h2>USER FAVORITE</h2>
                 <p>80%</p>
@@ -340,7 +333,7 @@
         </div>
       </div>
       <!--final design section-->
-      <div>
+      <div id="final">
         <h2>IOS FINAL DESIGN</h2>
         <!--overview screen-->
         <div>
@@ -349,13 +342,10 @@
             <h3>OVERVIEW SCREEN</h3>
             <p>Shows a quick overview of all the user's money- spending and savings on one easy to view screen.</p>
           </div>
-          <p>Overview for the month</p>
-          <p>Any bills due today</p>
-          <p>Breakdown of categories user has set up for the month.</p>
-          <p>Compared to the previous month</p>
-          <p>All transactions</p>
-          <img src="img/budgie/hifi/overview.svg" alt="">
-          <img src="img/budgie/hifi/menu1.svg" alt="">
+          <picture>
+            <source srcset="img/budgie/hifi/mobile/overview.svg" media="(max-width:767px)">
+            <img src="img/budgie/hifi/desktop/overview.svg" alt="Overview screen">
+          </picture>
         </div>
         <!--budget screen-->
         <div>
@@ -364,13 +354,10 @@
             <h3>BUDGET SCREEN</h3>
             <p>Shows detailed view of the uder's monthly budget plan and progress.</p>
           </div>
-          <div>
-            <p>Budget overview progress for the month</p>
-            <p>Budget Breakdown</p>
-            <p>All transactions</p>
-          </div>
-          <img src="img/budgie/hifi/budget.svg" alt="">
-          <img src="img/budgie/hifi/budgetdetail.svg" alt="">
+          <picture>
+            <source srcset="img/budgie/hifi/mobile/budget.svg" media="(max-width:767px)">
+            <img src="img/budgie/hifi/desktop/budget.svg" media="(max-width:1400px)" alt="Budget screen">
+          </picture>
         </div>
         <!-- savings screen-->
         <div>
@@ -379,41 +366,34 @@
             <h3>SAVINGS SCREEN</h3>
             <p>Shows detailed view of the uder's savings plan.</p>
           </div>
+          <picture>
+            <source srcset="img/budgie/hifi/mobile/savings.svg" media="(max-width:767px)">
+            <img src="img/budgie/hifi/desktop/savings.svg" alt="Savings screen">
+          </picture>
+          <!-- debt screen-->
           <div>
-            <p>Overall savings progress.</p>
-            <p>Breakdown of specific savings goals</p>
+            <!-- title and detail-->
+            <div>
+              <h3>DEBT SCREEN</h3>
+              <p>Shows detailed view of the user's debt and progress.</p>
+            </div>
+            <picture>
+              <source srcset="img/budgie/hifi/mobile/debt.svg" media="(max-width:767px)">
+              <img src="img/budgie/hifi/desktop/debt.svg" alt="debt screen">
+            </picture>
           </div>
-          <img src="img/budgie/hifi/savings.svg" alt="">
-          <img src="img/budgie/hifi/savedetail.svg" alt="">
-        </div>
-        <!-- debt screen-->
-        <div>
-          <!-- title and detail-->
+          <!--bill screen-->
           <div>
-            <h3>DEBT SCREEN</h3>
-            <p>Shows detailed view of the user's debt and progress.</p>
+            <!--title and detail-->
+            <div>
+              <h3>BILL SCREEN</h3>
+              <p>Shows detailed view of the user's bill and income.</p>
+            </div>
+            <picture>
+              <source srcset="img/budgie/hifi/mobile/bills.svg" media="(max-width:767px)">
+              <img src="img/budgie/hifi/desktop/bills.svg" alt="Bill screen" media="(max-width:1394px)">
+            </picture>
           </div>
-          <div>
-            <p>Overall debt amount and progress</p>
-            <p>Breakdown of each debt</p>
-          </div>
-          <img src="img/budgie/hifi/debt.svg" alt=""><img src="img/budgie/hifi/menu2.svg" alt=""><img src="img/budgie/hifi/debtdetail.svg" alt="">
-        </div>
-        <!--bill screen-->
-        <div>
-          <!--title and detail-->
-          <div>
-            <h3>BILL SCREEN</h3>
-            <p>Shows detailed view of the user's bill and income.</p>
-          </div>
-          <div>
-            <p>Overall bill amount and progress</p>
-            <p>Bill due calendar quickview</p>
-            <p>Bill due today</p>
-            <p>Bills due this month</p>
-            <p>Bills paid this month</p>
-          </div>
-          <img src="img/budgie/hifi/bills.svg" alt=""><img src="img/budgie/hifi/billdetail.svg" alt="">
         </div>
       </div>
   </main>
