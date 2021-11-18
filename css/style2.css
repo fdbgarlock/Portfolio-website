@@ -7,7 +7,7 @@ circle font (dark yellow): #FFD260;
 box color (pale blue): #F3FBFF;
 box outline (blue): #DDECF5;
 */
-body {
+main body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -18,32 +18,35 @@ body {
   color: #000000;
 }
 
-h1 {
+main h1 {
   font-family: 'Poppins', serif;
   font-size: 3rem;
   font-weight: 700;
+  letter-spacing: 0;
   color: #154C6B;
 }
 
-h2 {
+main h2 {
   font-family: 'Poppins', serif;
   font-size: 1.25rem;
+  letter-spacing: 0;
   color: #154C6B;
 }
 
-h3 {
+main h3 {
   font-family: 'Poppins', serif;
   font-size: 1.12rem;
+  letter-spacing: 0;
   color: #154C6B;
 }
 
-h4 {
+main h4 {
   font-family: 'Poppins', serif;
   font-size: 0.62rem;
   color: 000000;
 }
 
-p {
+main p {
   font-family: 'Poppins', serif;
   font-size: 14px;
   color: 000000;
@@ -51,56 +54,6 @@ p {
 
 img {
   width: 100%;
-}
-
-a {
-  color: #000000;
-  text-decoration: none;
-  /* No underlining */
-}
-
-a:hover {
-  color: #000000;
-  font-weight: 500;
-  /* bold when hovering over a link */
-}
-
-a:active {
-  /* selected link */
-  color: #000000;
-  font-weight: 700;
-}
-
-a.button {
-  display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #000000;
-  color: #ffffff;
-  /* needed to override the default link color */
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  padding: 10px 20px;
-  border-radius: 6px;
-  transition: 0.2s opacity;
-}
-
-a.button1 {
-  background-color: #154C6B;
-}
-
-a.button2 {
-  background-color: #F5AD94;
-}
-
-a.button3 {
-  background-color: #4B5572;
-}
-
-.button:hover {
-  opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
-  color: #FFFFFF;
-  font-weight: 700;
 }
 
 .line {
@@ -129,4 +82,8 @@ header {
 
 .overview h2, .overview h4, .overview p {
   color: #ffffff;
+}
+
+.ws{
+  margin: auto;
 }
