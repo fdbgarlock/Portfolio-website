@@ -347,3 +347,8 @@ template {
 [hidden] {
   display: none;
 }
+
+/******div 0 margin****/
+p {
+  margin: 0;
+}
