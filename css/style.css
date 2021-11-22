@@ -51,12 +51,6 @@ h4 {
   color: #000000;
 }
 
-p {
-  font-family: 'Montserrat', serif;
-  font-size: 14px;
-  color: #000000;
-}
-
 img {
   width: 100%;
 }
@@ -82,26 +76,12 @@ a:active {
 a.button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #000000;
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 500;
-  letter-spacing: 0.1em;
-  padding: 10px 20px;
+  padding: 0;
   border-radius: 6px;
   transition: 0.2s opacity;
-}
-
-a.button1 {
-  background-color: #154C6B;
-}
-
-a.button2 {
-  background-color: #F5AD94;
-}
-
-a.button3 {
-  background-color: #4B5572;
 }
 
 .button:hover {
@@ -125,19 +105,33 @@ border-radius: 50%;
 
 header {
   background-color: #ffffff;
-  text-align: center;
-  padding: 10px;
-  margin: 1em;
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  border: 1rem solid #ffffff;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 5px 0;
   border-bottom: 3px solid #4a4a4a;
+  margin-top: 10px;
 }
 
 main {
-  padding: 1rem;
+  padding: 0 1rem;
+  padding-top: 300px;
 }
 
 /************************* Layout styling */
 .container {
-  padding: 0 15px;
+  padding: 0px;
 }
 
 .row {
@@ -162,8 +156,9 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 5px;
+  padding: 0 12px;
 }
+
 
 footer ul {
   list-style-type: none;
@@ -178,11 +173,50 @@ footer ul li a {
   padding: 0 20px;
 }
 
-.tools ul {
+
+.tools ul, ul {
   list-style-type: none;
   padding: 0;
 }
 
 .tools ul li {
+  position: relative;
   display: inline-block;
+}
+
+.tools img { display: block; max-width: 200px; margin: 0 auto;}
+
+.logo {
+  width: 50%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline;
+  width: 100%;
+}
+
+.relevant {
+  margin-top: 5rem;
+}
+
+.tools {
+  margin-top: 5rem;
+}
+.copyright {
+  font-size: .5rem;
+}
+
+h1 {
+  float: left;
+}
+
+.font-size > div {
+  width: 20vw;
 }
