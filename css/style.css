@@ -12,6 +12,14 @@ box outline (blue): #DDECF5;
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -51,9 +59,6 @@ h4 {
   color: #000000;
 }
 
-img {
-  width: 100%;
-}
 
 a {
   color: #000000;
@@ -114,7 +119,7 @@ header {
 .navigation {
   display: flex;
   justify-content: space-around;
-  max-width: 700px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -126,7 +131,7 @@ nav {
 
 main {
   padding: 0 1rem;
-  padding-top: 300px;
+  padding-top: 200px;
 }
 
 /************************* Layout styling */
@@ -135,12 +140,13 @@ main {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 75px 0;
 }
 
-#hero h1 {
+#hero h1, #hero p {
   text-align: center;
 }
+
 
 footer {
   text-align: center;
@@ -187,9 +193,9 @@ footer ul li a {
 .tools img { display: block; max-width: 200px; margin: 0 auto;}
 
 .logo {
-  width: 50%;
-  max-width: 300px;
-  margin: 0 auto;
+  max-width: 200px;
+  display: block;
+  margin: auto;
 }
 
 h2 {
@@ -213,10 +219,50 @@ h2 {
   font-size: .5rem;
 }
 
-h1 {
-  float: left;
+#work h3 {
+  margin: 0;
+}
+
+#work {
+margin-top: 100px;
 }
 
 .font-size > div {
   width: 20vw;
+}
+
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  .logo {
+    float: left;
+  }
+  .navigation {
+    float: right;
+    margin-top: -35px;
+  }
+  nav {
+    padding-top: 150px;
+  }
+  .col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+}
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
