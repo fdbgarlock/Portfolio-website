@@ -76,6 +76,11 @@ img {
   border-radius: 30px;
 }
 
+.center {
+  display: inline-block;
+  margin: 0 auto;
+}
+
 .overview h2, .overview h4, .overview p {
   color: #ffffff;
 }
@@ -119,10 +124,16 @@ padding: 5px;
 }
 
 .color {
-  margin: auto;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .typeface p {
   font-size: 1.25rem;
   color: #154c6b;
+}
+
+#final h3, #final p {
+  display: block;
+  text-align: center;
 }
