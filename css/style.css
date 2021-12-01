@@ -13,7 +13,12 @@ box outline (blue): #DDECF5;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 2000px;
+  margin: auto;
+}
+
+main {
+  max-width: 2000px;
   margin: auto;
 }
 
@@ -234,6 +239,7 @@ margin-top: 100px;
 
 
 
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -251,6 +257,7 @@ Medium devices (640px and larger)
   .col-md-6 {
   width: 50%;
 }
+
 [class*="col-"] {
   float: left;
 }
