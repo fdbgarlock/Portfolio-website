@@ -7,18 +7,17 @@ circle font (dark yellow): #FFD260;
 box color (pale blue): #F3FBFF;
 box outline (blue): #DDECF5;
 */
-
 * {
   box-sizing: border-box;
 }
 
 .container {
-  max-width: 2000px;
+  max-width: 1750px;
   margin: auto;
 }
 
 main {
-  max-width: 2000px;
+  max-width: 1750px;
   margin: auto;
 }
 
@@ -64,7 +63,6 @@ h4 {
   color: #000000;
 }
 
-
 a {
   color: #000000;
   text-decoration: none;
@@ -107,11 +105,10 @@ a.button {
 }
 
 .circle {
-height: 50px;
-width: 50px;
-border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
-
 
 header {
   background-color: #ffffff;
@@ -152,38 +149,35 @@ main {
   text-align: center;
 }
 
-
 footer {
   text-align: center;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 12px;
 }
-
 
 footer ul {
   list-style-type: none;
   padding: 0;
 }
 
-footer ul li{
+footer ul li {
   display: inline-block;
 }
 
 footer ul li a {
   padding: 0 20px;
 }
-
 
 .tools ul, ul {
   list-style-type: none;
@@ -195,7 +189,11 @@ footer ul li a {
   display: inline-block;
 }
 
-.tools img { display: block; max-width: 200px; margin: 0 auto;}
+.tools img {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+}
 
 .logo {
   max-width: 200px;
@@ -220,6 +218,7 @@ h2 {
 .tools {
   margin-top: 5rem;
 }
+
 .copyright {
   font-size: .5rem;
 }
@@ -229,16 +228,12 @@ h2 {
 }
 
 #work {
-margin-top: 100px;
+  margin-top: 100px;
 }
 
-.font-size > div {
+.font-size>div {
   width: 20vw;
 }
-
-
-
-
 
 /* ==============================
 Medium devices (640px and larger)
@@ -247,29 +242,31 @@ Medium devices (640px and larger)
   .logo {
     float: left;
   }
+
   .navigation {
     float: right;
     margin-top: -35px;
   }
+
   nav {
     padding-top: 150px;
   }
-  .col-md-6 {
-  width: 50%;
-}
 
-[class*="col-"] {
-  float: left;
-}
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-}
+@media only screen and (min-width: 1024px) {}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
