@@ -12,17 +12,19 @@ box outline (blue): #DDECF5;
 }
 
 .container {
-  max-width: 1750px;
+  max-width: 1250px;
   margin: auto;
 }
 
 main {
-  max-width: 1750px;
+  max-width: 1250px;
   margin: auto;
 }
 
 img {
   width: 100%;
+  max-width: 700px;
+  margin: auto;
 }
 
 body {
@@ -41,6 +43,7 @@ h1 {
   font-size: 1.5rem;
   letter-spacing: 0.1em;
   color: #000000;
+  margin: 20px 0;
 }
 
 h2 {
@@ -69,45 +72,27 @@ a {
   /* No underlining */
 }
 
-a:hover {
-  color: #000000;
-  font-weight: 500;
-  /* bold when hovering over a link */
-}
-
 a:active {
   /* selected link */
   color: #000000;
   font-weight: 700;
 }
 
-a.button {
+.button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  color: #ffffff;
-  /* needed to override the default link color */
-  font-weight: 500;
-  padding: 0;
-  border-radius: 6px;
+  text-decoration: none;
+  padding: 10px;
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
-  color: #FFFFFF;
-  font-weight: 700;
+  cursor: pointer;
+  opacity: 0.4;
 }
 
 .line {
   min-width: 20px;
   border-bottom: 1px solid #000000;
-}
-
-.circle {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
 }
 
 header {
@@ -182,17 +167,13 @@ footer ul li a {
 .tools ul, ul {
   list-style-type: none;
   padding: 0;
+  margin: 0 auto;
 }
 
 .tools ul li {
   position: relative;
   display: inline-block;
-}
-
-.tools img {
-  display: block;
-  max-width: 200px;
-  margin: 0 auto;
+  margin: 0 10px;
 }
 
 .logo {
@@ -235,6 +216,40 @@ h2 {
   width: 20vw;
 }
 
+.about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -259,14 +274,29 @@ Medium devices (640px and larger)
   [class*="col-"] {
     float: left;
   }
+
+  footer {
+    content: “”;
+    clear: both;
+    display: table;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .col-md-5 {
+    width: 40%;
+  }
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {}
+  .col-md-7 {
+    width: 60%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+}

@@ -23,8 +23,9 @@ main h1 {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0;
-  margin: 0;
+  margin: 10px;
   color: #154C6B;
+  text-align: center;
 }
 
 main h2 {
@@ -56,6 +57,8 @@ main p {
 
 img {
   width: 100%;
+  max-width: 700px;
+  margin: auto;
 }
 
 .line {
@@ -65,7 +68,7 @@ img {
 
 .circle {
   height: 50px;
-  min-width: 50px;
+  width: 50px;
   border-radius: 50%;
 }
 
@@ -88,7 +91,7 @@ img {
   background-color: #F3FBFF;
   color: #154C6B;
   border: .125rem solid #E5F4FD;
-  margin: 1rem auto;
+  margin: 1rem;
   padding: 1rem;
   border-radius: 30px;
 }
@@ -98,61 +101,24 @@ img {
 }
 
 .color1, .color2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 150px));
-  grid-template-rows: 40px 75px 75px;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
+  gap: 10px;
+  justify-content: flex-start;
 }
 
-.color1 div, .color2 div {
-  grid-row-start: 2;
-  margin: auto;
+.color1-title {
+  margin: 0 auto 60px;
+  max-width: 590px;
 }
 
-.color1 h4 {
-  grid-row-start: 1;
-  grid-column: 2/8;
+.color2-title {
+  margin: 0 auto 60px;
+  max-width: 757px;
 }
 
-.color2 h4 {
-  grid-row-start: 1;
-  grid-column: 1/10;
-}
 
-.typeface {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 200px));
-  grid-template-rows: 40px 50px;
-  margin: 20px auto;
-}
-
-.typeface p {
-  margin: 0;
-}
-
-.typeface-title2 {
-  grid-column-start: 3;
-}
-
-.fontname {
-  grid-area: 2/1;
-}
-
-.bold {
-  grid-area: 2/3;
-}
-
-.semibold {
-  grid-area: 2/4;
-}
-
-.medium {
-  grid-area: 2/5;
-}
-
-.light {
-  grid-area: 2/6;
-}
 
 .typeface p {
   font-size: 1.25rem;
@@ -195,4 +161,52 @@ img {
 .test h2 {
   color: #E1A200;
   text-align: center;
+}
+
+
+
+
+@media only screen and (min-width: 640px) {
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+  .typeface {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 200px));
+    grid-template-rows: 40px 50px;
+    margin: 20px auto;
+  }
+
+  .typeface p {
+    margin: 0;
+  }
+
+  .typeface-title2 {
+    grid-column-start: 3;
+  }
+
+  .fontname {
+    grid-area: 2/1;
+  }
+
+  .bold {
+    grid-area: 2/3;
+  }
+
+  .semibold {
+    grid-area: 2/4;
+  }
+
+  .medium {
+    grid-area: 2/5;
+  }
+
+  .light {
+    grid-area: 2/6;
+  }
 }
