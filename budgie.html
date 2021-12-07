@@ -14,21 +14,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;700&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/style2.css">
+  <script src="https://kit.fontawesome.com/7459eeff23.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <!--logo and menu-->
     <div class="container">
-      <img src="img/textlogo.svg" alt="logo" class="logo">
+      <div class="navtoggle" id="myNavtoggle">
+      <img src="img/name-logo.svg" alt="logo" class="logo">
       <nav>
         <ul class="navigation">
           <li><a href="index.html" style="font-weight: 700">WORK</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="#contact">CONTACT</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+  </div>
   </header>
 
 
@@ -411,6 +415,10 @@
       <p class="copyright">&copy; Faith Garlock 2021</p>
     </div>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+  integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
