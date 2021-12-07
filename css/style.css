@@ -81,7 +81,10 @@ a:active {
 .button {
   display: inline-block;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 15px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 3px;
   transition: 0.2s opacity;
 }
 
@@ -192,6 +195,13 @@ h2 {
 .copyright {
   font-size: .5rem;
 }
+
+/******** buttons**************************/
+
+
+
+
+
 
 #work h3 {
   margin: 0;
